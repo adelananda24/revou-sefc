@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>First Day SEFC</title>
+        <style>
+            table, th, td {border: 1px solid black;}
+        </style> <!--Defining the style of table-->
     </head>
     <body>
         <h1 style="color: rebeccapurple;">Hello World 123</h1>
@@ -15,6 +18,20 @@
         <p><b>This text is bold</b></p>
         <p><i>This text is italic</i></p>
         <p>This is<sub>subscript</sub> and <sup>superscript</sup></p>
+
+        <p>
+            <a href="/index.html" target="_blank">
+                Halaman Index
+            </a>
+        </p>
+        <p>
+            <a href="https://x.com/starbbtae" target="_blank"> <!--Target blank will direct the link to a new tab-->
+                Starbbtae in your X
+            </a>
+        </p>
+        <p>
+            <a href="#aku">Klik untuk cari namaku!></a>
+        </p>
         <hr>
         <h2>Bahasa Pemrograman untuk dipelalajari:</h2>
         <ul>
@@ -32,5 +49,131 @@
             <li>Pepaya</li>
             <li>Mangga</li>
         </ol> <!--type="1"/"a"/"A"/"i"/"I"-->
+
+        <table>
+            <tr> <!--To define a table row-->
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th> <!--To define table's column name / Table Header-->
+            </tr>
+            <tr>
+                <td>Alfred Futterkiste</td> <!--td to define a table data-->
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro Commercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table>
+            <tr>
+                <th>Asal</th>
+                <th>Domisili</th>
+            </tr>
+            <tr>
+                <td colspan="2"> <!--Colspan is to merge columns-->
+                    <center>Jakarta</center>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table>
+            <tr>
+                <th rowspan="2">Jakarta</th>
+                <td>- A -</td>
+                <td>- B -</td>
+            </tr>
+            <tr>
+                <td>- C -</td>
+                <td>- D -</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <img src="https://pbs.twimg.com/media/GnvzhfobYAA6Rlr?format=jpg&name=large" 
+                alt="Ini gambar dari X" width="300" height="400"/>
+
+        <br>
+
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="aku">Dea</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+        <h2 id="kau">Taeyeon</h2>
+
+        <br>
+
+        <form action="" method="post">
+            <!--action is what will happen after we fill the form,
+                where will we send the form data
+                method: how to send the data-->
+                <label for="name">Name:</label>
+                <input id="name" type="text">
+                <br/>
+                <input type="password" required>
+                <br/>
+                <input type="checkbox">
+                <br/>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="html">CSS</label>
+                <input type="radio" id="Javascript" name="fav_language" value="JavaScript">
+                <label for="html">JavaScript</label>
+                <br/>
+                <input type="number" min="1" max="10">
+                <br/>
+                <textarea rows="8" cols="64">Ketik di sini</textarea>
+                <br/>
+                <input type="submit" value="OK">
+        </form>
+
+        <hr>
+
+        <form>
+            <p>Apa warna favoritmu?</p>
+            <select>
+                <option>Merah</option>
+                <option>Kuning</option>
+                <option>Hijau</option>
+                <option>Biru</option>
+            </select>
+            <p>Apa makanan favoritmu?</p>
+            <select>
+                <option>Papeda</option>
+                <option>Soto Kwali</option>
+                <option>Sate Padang</option>
+                <option selected>Gedeg</option> <!--Selected for the default value-->
+            </select>
+            <p>Apa minuman favoritmu?</p>
+                <select>
+                    <optgroup label="Jus Buah">
+                        <option>Jus Jeruk</option>
+                        <option>Just Apel</option>
+                        <option>Just Mangga</option>
+                    </optgroup>
+                    <optgroup label="Jamu">
+                        <option>Beras Kencur</option>
+                        <option>Buyung Upik</option>
+                        <option>Asem</option>
+                    </optgroup>
+                </select>
+        </form>
     </body>
 </html>
